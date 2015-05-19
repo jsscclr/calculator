@@ -1,1 +1,8 @@
-<p>Subtract: <%= @result %>
+<%= form_tag calculator_subtract_path, method: :get do %>
+	<%= number_field_tag "a" %>
+	<%= number_field_tag "b" %>
+	<%= submit_tag('Subtract') %>
+<% end %>
+
+<p>Result: <%= @result %></p>
+

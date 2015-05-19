@@ -1,1 +1,8 @@
-<p>Add: <%= @result %>
+<%= form_tag calculator_add_path, method: :get do %>
+	<%= number_field_tag "a" %>
+	<%= number_field_tag "b" %>
+	<%= submit_tag('Add') %>
+<% end %>
+
+<p>Result: <%= @result %></p>
+

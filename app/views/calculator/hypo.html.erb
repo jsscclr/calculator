@@ -1,1 +1,8 @@
-<p>Hypotenuse: <%= @hypo %></p>
+<%= form_tag calculator_hypo_path, method: :get do %>
+	<%= number_field_tag "a" %>
+	<%= number_field_tag "b" %>
+	<%= submit_tag('Hypotenuse') %>
+<% end %>
+
+<p>Result: <%= @hypo %></p>
+

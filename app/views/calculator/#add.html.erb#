@@ -1,0 +1,2 @@
+<p>Add: <%= @result %>
+<%= form_for @result do %>
